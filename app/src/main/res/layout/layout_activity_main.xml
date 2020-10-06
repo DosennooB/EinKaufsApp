@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/OoO"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:checkedButton="@id/oma"
+            >
+            <RadioButton
+                android:id="@+id/oma"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="100dp"
+                android:text="Oma"/>
+
+            <RadioButton
+                android:id="@+id/opa"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="100dp"
+                android:text="Opa"/>
+        </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/ware"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:text="Ware"/>
+        <EditText
+            android:id="@+id/anzahl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:inputType="number"/>
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/wichtig"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="ganz Wichtig"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="Ok"
+            android:onClick="clickOk"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="Clear"
+            android:onClick="clickClear"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/anzOma"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Für Oma: 0"/>
+        <TextView
+            android:id="@+id/anzOpa"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Für Opa: 0"/>
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/listwaren"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+
+
+</LinearLayout>
